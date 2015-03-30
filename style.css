@@ -117,6 +117,43 @@ body {
   -webkit-filter: grayscale(0);
   filter: grayscale(0); }
 
+.persons ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1; }
+  .persons ul li {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0;
+    white-space: nowrap;
+    float: left;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding: 0;
+    width: 100%; }
+    .persons ul li:first-child {
+      padding-left: 0; }
+    .persons ul li:last-child {
+      padding-right: 0; }
+    .persons ul li.last {
+      padding-right: 0; }
+    .persons ul li a {
+      display: block;
+      text-decoration: none; }
+      .persons ul li a img {
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        float: left;
+        margin-right: 1em; }
+      .persons ul li a:hover {
+        text-decoration: underline; }
+
 footer {
   margin: 1em 0; }
   footer ul {
