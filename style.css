@@ -46,6 +46,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block; }
 
 body {
+  background-color: #000;
+  background-image: url("img/polaris.png");
+  background-position: top center;
+  background-repeat: repeat-x;
+  color: #fff;
   font-family: Arial;
   margin: 1em; }
   @media screen and (min-width: 40em) {
@@ -54,21 +59,28 @@ body {
       max-width: 450px;
       width: 90%; } }
 
+header {
+  text-align: center; }
+
 [role="main"] a {
-  color: black; }
+  color: #fff; }
 [role="main"] blockquote {
   -moz-border-radius: 0.5em;
   -webkit-border-radius: 0.5em;
   border-radius: 0.5em;
-  background-color: cornsilk;
+  background-color: rgba(0, 0, 0, 0.5);
   margin: 1em;
   padding: 1em; }
 [role="main"] h1, [role="main"] h2, [role="main"] h3, [role="main"] h4, [role="main"] h5, [role="main"] h5 {
+  color: #fff;
   font-family: Verdana;
   line-height: 1.25em;
   margin: 1em 0 0.25em; }
 [role="main"] h1 {
-  font-size: 2em; }
+  text-shadow: 0 0 1px #000;
+  font-size: 2em;
+  margin-top: 0.5em;
+  text-align: center; }
 [role="main"] h2 {
   font-size: 1.5em; }
 [role="main"] h3 {
@@ -177,6 +189,6 @@ footer {
       footer ul li.last {
         padding-right: 0; }
   footer a {
-    color: black; }
+    color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
