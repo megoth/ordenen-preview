@@ -56,50 +56,16 @@ body {
       max-width: 450px;
       width: 90%; } }
 
-header {
-  text-align: center; }
-
-[role="main"] a {
-  color: #000; }
-[role="main"] blockquote {
-  -moz-border-radius: 0.5em;
-  -webkit-border-radius: 0.5em;
-  border-radius: 0.5em;
-  background-color: rgba(0, 0, 0, 0.2);
-  margin: 1em;
-  padding: 1em; }
-[role="main"] em {
-  font-style: italic; }
-[role="main"] h1, [role="main"] h2, [role="main"] h3, [role="main"] h4, [role="main"] h5, [role="main"] h5 {
-  color: #000;
-  font-family: Verdana;
-  line-height: 1.25em;
-  margin: 1em 0 0.25em; }
-[role="main"] h1 {
-  text-shadow: 0 0 1px #fff;
-  font-size: 2em;
-  margin-top: 0.5em;
-  text-align: center; }
-[role="main"] h2 {
-  font-size: 1.5em; }
-[role="main"] h3 {
-  font-size: 1.25em; }
-[role="main"] p {
-  line-height: 1.5em;
-  padding: 0 0 0.75em; }
-[role="main"] strong {
-  font-weight: bold; }
-[role="main"].person img.profile {
-  float: right;
-  margin-left: 1em; }
-
-.classes ul {
+header ul,
+footer ul {
   margin: 0;
   padding: 0;
   border: 0;
   overflow: hidden;
-  *zoom: 1; }
-  .classes ul li {
+  *zoom: 1;
+  margin-bottom: 0.5em; }
+  header ul li,
+  footer ul li {
     list-style-image: none;
     list-style-type: none;
     margin-left: 0;
@@ -107,55 +73,106 @@ header {
     float: left;
     padding-left: 4px;
     padding-right: 4px; }
-    .classes ul li:first-child {
+    header ul li:first-child,
+    footer ul li:first-child {
       padding-left: 0; }
-    .classes ul li:last-child {
+    header ul li:last-child,
+    footer ul li:last-child {
       padding-right: 0; }
-    .classes ul li.last {
+    header ul li.last,
+    footer ul li.last {
       padding-right: 0; }
-    .classes ul li a {
-      display: block; }
-.classes a img {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  -moz-transition: -webkit-filter 500ms linear;
-  -o-transition: -webkit-filter 500ms linear;
-  -webkit-transition: -webkit-filter 500ms linear;
-  transition: -webkit-filter 500ms linear; }
-.classes a:hover img {
-  -webkit-filter: grayscale(0);
-  filter: grayscale(0); }
 
-.persons ul {
+a {
+  color: #000; }
+
+blockquote {
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 1em;
+  padding: 1em; }
+  blockquote p:last-child {
+    margin-bottom: 0; }
+
+em {
+  font-style: italic; }
+
+h1, h2, h3, h4, h5, h5 {
+  color: #000;
+  font-family: Verdana;
+  line-height: 1.25em;
+  margin: 1em 0 0.25em; }
+
+h1 {
+  text-shadow: 0 0 1px #fff;
+  font-size: 2em;
+  margin-top: 0.5em;
+  text-align: center; }
+
+h2 {
+  font-size: 1.5em; }
+
+h3 {
+  font-size: 1.25em; }
+
+p {
+  line-height: 1.5em;
+  margin-bottom: 0.75em; }
+
+strong {
+  font-weight: bold; }
+
+[role="main"].index blockquote {
+  overflow: hidden;
+  *zoom: 1; }
+  [role="main"].index blockquote a {
+    clear: left;
+    float: right; }
+
+[role="main"].person img.profile {
+  float: right;
+  margin-left: 1em; }
+
+nav a {
+  display: block; }
+
+nav.persons ul li {
+  overflow: hidden;
+  *zoom: 1;
+  padding: 0;
+  width: 100%; }
+  nav.persons ul li a {
+    text-decoration: none; }
+    nav.persons ul li a img {
+      float: left;
+      margin-right: 1em; }
+    nav.persons ul li a .info {
+      margin-left: calc(102px + 1em); }
+    nav.persons ul li a:hover {
+      text-decoration: underline; }
+
+ul.overview {
   margin: 0;
   padding: 0;
   border: 0;
   overflow: hidden;
   *zoom: 1; }
-  .persons ul li {
+  ul.overview li {
     list-style-image: none;
     list-style-type: none;
     margin-left: 0;
     white-space: nowrap;
     float: left;
     padding-left: 4px;
-    padding-right: 4px;
-    padding: 0;
-    width: 100%; }
-    .persons ul li:first-child {
+    padding-right: 4px; }
+    ul.overview li:first-child {
       padding-left: 0; }
-    .persons ul li:last-child {
+    ul.overview li:last-child {
       padding-right: 0; }
-    .persons ul li.last {
+    ul.overview li.last {
       padding-right: 0; }
-    .persons ul li a {
-      display: block;
-      text-decoration: none; }
-      .persons ul li a img {
-        float: left;
-        margin-right: 1em; }
-      .persons ul li a:hover {
-        text-decoration: underline; }
 
 img.profile {
   -moz-border-radius: 50%;
@@ -167,28 +184,8 @@ img.profile {
   border: solid 1px black; }
 
 footer {
-  margin: 1em 0; }
-  footer ul {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    overflow: hidden;
-    *zoom: 1; }
-    footer ul li {
-      list-style-image: none;
-      list-style-type: none;
-      margin-left: 0;
-      white-space: nowrap;
-      float: left;
-      padding-left: 4px;
-      padding-right: 4px; }
-      footer ul li:first-child {
-        padding-left: 0; }
-      footer ul li:last-child {
-        padding-right: 0; }
-      footer ul li.last {
-        padding-right: 0; }
-  footer a {
-    color: #000; }
+  border-top: solid 1px #000;
+  margin-top: 1em;
+  padding: 0.5em 0; }
 
 /*# sourceMappingURL=style.css.map */
