@@ -75,7 +75,8 @@ footer ul {
     white-space: nowrap;
     float: left;
     padding-left: 4px;
-    padding-right: 4px; }
+    padding-right: 4px;
+    padding: 0 0.5em 0 0; }
     header ul li:first-child,
     footer ul li:first-child {
       padding-left: 0; }
@@ -189,7 +190,8 @@ ul.overview {
     white-space: nowrap;
     float: left;
     padding-left: 4px;
-    padding-right: 4px; }
+    padding-right: 4px;
+    padding: 0 0.5em 0 0; }
     ul.overview li:first-child {
       padding-left: 0; }
     ul.overview li:last-child {
