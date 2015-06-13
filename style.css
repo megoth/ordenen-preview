@@ -90,7 +90,11 @@ blockquote {
   -moz-border-radius: 0.5em;
   -webkit-border-radius: 0.5em;
   border-radius: 0.5em;
+  -moz-box-shadow: 0px 5px #333333;
+  -webkit-box-shadow: 0px 5px #333333;
+  box-shadow: 0px 5px #333333;
   background-color: rgba(0, 0, 0, 0.2);
+  border: solid 1px #000;
   margin: 1em;
   padding: 1em; }
   blockquote p:last-child {
@@ -123,6 +127,10 @@ p {
 
 strong {
   font-weight: bold; }
+
+[role="main"] {
+  overflow: hidden;
+  *zoom: 1; }
 
 [role="main"].index blockquote {
   overflow: hidden;
@@ -181,7 +189,11 @@ img.profile {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  border: solid 1px black; }
+  -moz-box-shadow: 0px 5px #333333;
+  -webkit-box-shadow: 0px 5px #333333;
+  box-shadow: 0px 5px #333333;
+  border: solid 1px black;
+  margin-bottom: 0.5em; }
 
 footer {
   border-top: solid 1px #000;
