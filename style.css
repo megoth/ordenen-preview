@@ -45,33 +45,64 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
+@font-face {
+  font-family: Ruthie-Regular-OTF;
+  src: url("./Ruthie-Regular-OTF.otf") format("opentype"); }
 body {
   background-color: #fff;
   color: #000;
-  font-family: Arial; }
+  font-family: monospace; }
   body #MainNavigation {
     padding-top: 1em; }
+  body > header {
+    text-align: center; }
   body > footer {
     padding-bottom: 1em; }
+  body.association > header, body.penguin > header, body.person > header {
+    background: #000 url("./elegant.jpg") center center; }
+    body.association > header > .inner, body.penguin > header > .inner, body.person > header > .inner {
+      overflow: hidden;
+      *zoom: 1; }
+      body.association > header > .inner a,
+      body.association > header > .inner h1,
+      body.association > header > .inner p, body.penguin > header > .inner a,
+      body.penguin > header > .inner h1,
+      body.penguin > header > .inner p, body.person > header > .inner a,
+      body.person > header > .inner h1,
+      body.person > header > .inner p {
+        text-shadow: 0 0 1px #000;
+        color: #fff; }
+      body.association > header > .inner h1, body.penguin > header > .inner h1, body.person > header > .inner h1 {
+        font-family: Ruthie-Regular-OTF;
+        font-size: 3em; }
+      body.association > header > .inner img, body.penguin > header > .inner img, body.person > header > .inner img {
+        -moz-box-shadow: 0 0 0 #333333;
+        -webkit-box-shadow: 0 0 0 #333333;
+        box-shadow: 0 0 0 #333333;
+        border-color: #fff;
+        margin: 0; }
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 42em) {
   #MainNavigation .bar,
   #MainNavigation nav .inner,
   [role="main"],
+  body > header > .inner,
   body > footer {
     padding: 0 1em; } }
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 42em) {
   #MainNavigation .bar,
   #MainNavigation nav .inner,
   [role="main"],
+  body > header > .inner,
   body > footer {
     margin: 0 auto;
-    max-width: 30em;
+    max-width: 34em;
     width: 90%; } }
 @media screen and (min-width: 60em) {
   #MainNavigation .bar,
   #MainNavigation nav .inner,
   [role="main"],
+  body > header > .inner,
   body > footer {
     max-width: 42em; } }
 
@@ -124,14 +155,14 @@ em {
 
 h1, h2, h3, h4, h5, h5 {
   color: #000;
-  font-family: Verdana;
+  font-family: monospace;
   line-height: 1.25em;
-  margin: 1em 0 0.25em; }
+  margin: 1rem 0 0.25rem; }
 
 h1 {
   text-shadow: 0 0 1px #fff;
   font-size: 2em;
-  margin-top: 0.5em; }
+  margin-top: 0.5rem; }
 
 h2 {
   font-size: 1.5em; }
@@ -140,8 +171,8 @@ h3 {
   font-size: 1.25em; }
 
 p {
-  line-height: 1.5em;
-  margin-bottom: 0.75em; }
+  line-height: 1.25em;
+  margin-bottom: 0.5em; }
 
 strong {
   font-weight: bold; }
@@ -149,31 +180,9 @@ strong {
 [role="main"] {
   overflow: hidden;
   *zoom: 1; }
-  [role="main"] header {
-    text-align: center; }
-    [role="main"] header ~ header {
-      margin-top: 5em; }
   [role="main"] ul {
     list-style-type: disc;
     margin: 0.75em 0 0.75em 1.25em; }
-
-[role="main"].index blockquote {
-  overflow: hidden;
-  *zoom: 1; }
-  [role="main"].index blockquote a {
-    clear: left;
-    float: right; }
-
-@media screen and (max-width: 40em) {
-  [role="main"].penguin header,
-  [role="main"].person header {
-    text-align: center; } }
-@media screen and (min-width: 40em) {
-  [role="main"].penguin img.profile,
-  [role="main"].person img.profile {
-    float: right;
-    margin-left: 1em;
-    text-align: initial; } }
 
 nav a {
   display: block; }
@@ -267,7 +276,7 @@ nav.breadcrumbs ul {
   border: 0;
   overflow: hidden;
   *zoom: 1;
-  margin: 1em 0; }
+  margin: 0.5em 0; }
   nav.breadcrumbs ul > li {
     list-style-image: none;
     list-style-type: none;
@@ -319,7 +328,7 @@ nav.breadcrumbs ul {
         z-index: 1; }
       nav.breadcrumbs ul > li a:after {
         border-left-color: rgba(255, 182, 25, 0.5); }
-    @media screen and (max-width: 30em) {
+    @media screen and (max-width: 34em) {
       nav.breadcrumbs ul > li:last-child {
         display: none; } }
     nav.breadcrumbs ul > li:first-child a {
@@ -362,9 +371,9 @@ nav.breadcrumbs ul {
       border-radius: 50%;
       background-color: #FFB619;
       border: solid 1px #000;
+      font-family: Arial;
       float: right;
       height: 3em;
-      margin-bottom: 0.5em;
       width: 3em; }
     #MainNavigation .bar .trigger {
       -moz-transition: -moz-transform 0.4s;
