@@ -85,7 +85,7 @@ body {
     display: inline-block;
     width: 33.33%; }
   #MainNavigation #MenuTrigger {
-    display: none; } }
+    display: none !important; } }
 
 footer ul {
   margin: 0;
