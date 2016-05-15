@@ -117,6 +117,9 @@ blockquote {
   blockquote p:last-child {
     margin-bottom: 0; }
 
+img {
+  max-width: 100%; }
+
 em {
   font-style: italic; }
 
@@ -153,11 +156,11 @@ strong {
   [role="main"] header:first-child h3,
   [role="main"] header:first-child p {
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.75);
-    color: #fff;
-    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.75); }
+    color: #fff; }
   [role="main"] header:first-child h2 {
     font-family: "Open Sans", sans-serif;
-    font-size: 3em; }
+    font-size: 3em;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.75); }
   [role="main"] header:first-child h3 {
     font-size: 1.5em; }
   [role="main"] header:first-child img {
@@ -169,6 +172,9 @@ strong {
 nav a {
   display: block;
   outline: 0; }
+
+nav.articles ul {
+  list-style-type: none; }
 
 nav.persons ul,
 nav.years ul,
