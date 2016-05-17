@@ -149,6 +149,7 @@ strong {
 
 [role="main"] header:first-child {
   background-color: rgba(0, 0, 0, 0.75);
+  background: radial-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85));
   margin: 0.5em 0 1em;
   padding: 1em 0; }
   [role="main"] header:first-child a,
@@ -157,12 +158,15 @@ strong {
   [role="main"] header:first-child p {
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.75);
     color: #fff; }
+  [role="main"] header:first-child h2,
+  [role="main"] header:first-child h3 {
+    margin: 0; }
   [role="main"] header:first-child h2 {
     font-family: "Open Sans", sans-serif;
-    font-size: 3em;
+    font-size: 2em;
     -webkit-text-stroke: 1px rgba(0, 0, 0, 0.75); }
   [role="main"] header:first-child h3 {
-    font-size: 1.5em; }
+    font-size: 1.25em; }
   [role="main"] header:first-child img {
     background: rgba(255, 255, 255, 0.5); }
 [role="main"] ul {
