@@ -80,7 +80,7 @@ body {
 @media screen and (min-width: 45em) {
   #MainNavigation #MainMenu li {
     display: inline-block;
-    width: 33.33%; }
+    width: 25%; }
   #MainNavigation #MenuTrigger {
     display: none !important; } }
 
@@ -337,6 +337,12 @@ nav.breadcrumbs ul {
       nav.breadcrumbs ul > li a:focus:after,
       nav.breadcrumbs ul > li a:hover:after {
         border-left-color: #ffb619; }
+
+ul.history {
+  list-style-type: none;
+  margin: 0; }
+  ul.history > li {
+    min-height: 3em; }
 
 #MainMenu a {
   display: block;
