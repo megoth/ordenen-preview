@@ -177,7 +177,7 @@ strong {
   margin: 0.75em 0 0.75em 1.25em; }
 [role="main"] sup {
   vertical-align: super;
-  font-size: smaller; }
+  font-size: x-small; }
 
 nav a {
   display: block;
@@ -344,11 +344,23 @@ nav.breadcrumbs ul {
       nav.breadcrumbs ul > li a:hover:after {
         border-left-color: #ffb619; }
 
+#FilterHead,
+#Filters {
+  display: none; }
+
+ol.references .selected,
+ul.history .selected {
+  background-color: rgba(255, 182, 25, 0.5); }
+
 ul.history {
   list-style-type: none;
   margin: 0; }
   ul.history > li {
     min-height: 3em; }
+  ul.history ul {
+    margin-top: 0.25em; }
+  ul.history .event {
+    padding: 0.1em 0; }
 
 #MainMenu a {
   display: block;
