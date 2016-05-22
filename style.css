@@ -169,9 +169,15 @@ strong {
     font-size: 1.25em; }
   [role="main"] header:first-child img {
     background: rgba(255, 255, 255, 0.5); }
+[role="main"] ol {
+  list-style-type: decimal;
+  margin: 0.75em 0 0.75em 1.5em; }
 [role="main"] ul {
   list-style-type: disc;
   margin: 0.75em 0 0.75em 1.25em; }
+[role="main"] sup {
+  vertical-align: super;
+  font-size: smaller; }
 
 nav a {
   display: block;
