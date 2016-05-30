@@ -80,7 +80,7 @@ body {
 @media screen and (min-width: 45em) {
   #MainNavigation #MainMenu li {
     display: inline-block;
-    width: 25%; }
+    width: 33.33%; }
   #MainNavigation #MenuTrigger {
     display: none !important; } }
 
@@ -161,6 +161,7 @@ strong {
     color: #fff; }
   [role="main"] header:first-child h2,
   [role="main"] header:first-child h3 {
+    font-weight: normal;
     margin: 0; }
   [role="main"] header:first-child h2 {
     font-family: "Open Sans", sans-serif;
@@ -170,6 +171,13 @@ strong {
     font-size: 1.25em; }
   [role="main"] header:first-child img {
     background: rgba(255, 255, 255, 0.5); }
+[role="main"] h1,
+[role="main"] h2,
+[role="main"] h3,
+[role="main"] h4,
+[role="main"] h5,
+[role="main"] h6 {
+  font-weight: bold; }
 [role="main"] ol {
   list-style-type: decimal;
   margin: 0.75em 0 0.75em 1.5em; }
