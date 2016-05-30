@@ -356,6 +356,21 @@ nav.breadcrumbs ul {
 #FilterHead,
 #Filters {
   display: none; }
+  #FilterHead label,
+  #FilterHead select,
+  #Filters label,
+  #Filters select {
+    display: block;
+    max-width: 100%;
+    width: 100%; }
+  #FilterHead select,
+  #Filters select {
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-color: rgba(255, 182, 25, 0.5);
+    border: solid 1px #000;
+    color: #000; }
 
 ol.references .selected,
 ul.history .selected {
