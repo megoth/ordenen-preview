@@ -66,7 +66,7 @@ body {
   body > header,
   body > footer {
     margin: 0 auto;
-    max-width: 36em;
+    max-width: 40em;
     width: 90%; } }
 @media screen and (min-width: 60em) {
   [role="main"] .inner,
@@ -80,7 +80,7 @@ body {
 @media screen and (min-width: 45em) {
   #MainNavigation #MainMenu li {
     display: inline-block;
-    width: 33.33%; }
+    width: 25%; }
   #MainNavigation #MenuTrigger {
     display: none !important; } }
 
@@ -337,7 +337,7 @@ nav.breadcrumbs ul {
         z-index: 1; }
       nav.breadcrumbs ul > li a:after {
         border-left-color: rgba(255, 182, 25, 0.5); }
-    @media screen and (max-width: 36em) {
+    @media screen and (max-width: 40em) {
       nav.breadcrumbs ul > li:last-child {
         display: none; } }
     nav.breadcrumbs ul > li:first-child a {
@@ -388,8 +388,7 @@ ul.history {
 
 #MainMenu a {
   display: block;
-  padding: 0.5em;
-  text-transform: uppercase; }
+  padding: 0.5em; }
   #MainMenu a:focus, #MainMenu a:hover {
     background-color: rgba(255, 182, 25, 0.5); }
 
