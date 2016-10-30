@@ -45,6 +45,9 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
+* {
+  box-sizing: border-box; }
+
 body {
   background-color: #fff;
   color: #000;
@@ -74,6 +77,17 @@ body {
   body > footer {
     max-width: 45em; } }
 
+body > footer #MoreMenu li {
+  display: inline-block;
+  padding: 0.5em;
+  width: 100%; }
+@media screen and (min-width: 20em) {
+  body > footer #MoreMenu li {
+    width: 50%; } }
+@media screen and (min-width: 40em) {
+  body > footer #MoreMenu li {
+    width: 25%; } }
+
 @media screen and (max-width: 45em) {
   #MainNavigation #MainMenu {
     display: none; } }
@@ -99,8 +113,8 @@ footer ul {
     float: left;
     padding-left: 4px;
     padding-right: 4px;
-    margin: 0.25em 0.25em 0 0;
-    padding: 0; }
+    padding: 0;
+    text-align: center; }
     footer ul li:first-child {
       padding-left: 0; }
     footer ul li:last-child {
@@ -148,6 +162,9 @@ p {
 strong {
   font-weight: bold; }
 
+[role="main"] figure figcaption {
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 0.9em; }
 [role="main"] header:first-child {
   background-color: rgba(0, 0, 0, 0.75);
   background: radial-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85));
