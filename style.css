@@ -83,10 +83,7 @@ body > footer #MoreMenu li {
   width: 100%; }
 @media screen and (min-width: 20em) {
   body > footer #MoreMenu li {
-    width: 50%; } }
-@media screen and (min-width: 40em) {
-  body > footer #MoreMenu li {
-    width: 25%; } }
+    width: 33.33333%; } }
 
 @media screen and (max-width: 45em) {
   #MainNavigation #MainMenu {
@@ -403,10 +400,13 @@ ul.history {
   ul.history .event {
     padding: 0.1em 0; }
 
-#MainMenu a {
+#MainMenu a,
+#MoreMenu a {
   display: block;
   padding: 0.5em; }
-  #MainMenu a:focus, #MainMenu a:hover {
+  #MainMenu a:focus, #MainMenu a:hover,
+  #MoreMenu a:focus,
+  #MoreMenu a:hover {
     background-color: rgba(255, 182, 25, 0.5); }
 
 #MainNavigation #MenuTrigger {
